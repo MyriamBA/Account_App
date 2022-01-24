@@ -1,0 +1,46 @@
+<p>update-account works!</p>
+<h3>Update Account</h3>
+ 
+<div style="width: 400px;">
+<form (ngSubmit)="onSubmit()" >
+
+	<div class="form-group">
+
+ 	<input type="text" class="form-control" id="firstName" required [(ngModel)]="account.firstName" name="firstName">
+
+	</div><br>
+
+ 	<div class="form-group">
+
+ 	<input type="text" class="form-control" id="lastName" required [(ngModel)]="account.lastName" name="lastName">
+	 </div><br>
+
+
+ 	<div class="form-group">
+
+ 	<input type="text" class="form-control" id="cin" required [(ngModel)]="account.cin" name="cin">
+
+	 </div><br>
+
+	 <div class="form-group">
+
+    <input type="text" class="form-control"  id="accountNumber" required [(ngModel)]="account.accountNumber" name="accountNumber">
+	 </div><br>
+
+
+	<div class="form-group">
+
+ 	<input type="text" class="form-control" id="agency" required [(ngModel)]="account.agency" name="agency">
+	</div><br>
+
+
+ 	<div class="form-group">
+ 
+<input type="text" class="form-control" id="amount"
+required [(ngModel)]="account.amount" name="amount">	
+</div>	<br>
+
+
+ 	<button type="submit" class="btn btn-success">Submit</button>
+ 	</form> 
+</div>
